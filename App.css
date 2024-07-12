@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.App-header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #45a049;
+}
+
+main {
+  flex: 1;
+  padding: 1em;
+  width: 90%;
+  max-width: 800px;
+}
+
+.sale-info, .item-list, .map {
+  background-color: white;
+  padding: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-list input {
+  width: calc(100% - 80px);
+  padding: 0.5em;
+  margin-right: 10px;
+}
+
+.item-list button {
+  padding: 0.5em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.item-list button:hover {
+  background-color: #45a049;
+}
+
+.item-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item-list li {
+  background: #f9f9f9;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+.element {
+  scroll-margin-top: 100px; /* Adjust this value to match the height of your sticky header */
+}
